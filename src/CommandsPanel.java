@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 public class CommandsPanel extends JPanel 
 	implements ActionListener{
@@ -25,9 +26,9 @@ public class CommandsPanel extends JPanel
 	}
 	
 	// On écoute les actions du panneau (ici il n'y a que le bouton donc on a pas besoin de vérifier l'origine)
-	public void actionPerformed(ActionEvent e) {
-				
-		System.out.println("compare files");
+	public void actionPerformed(ActionEvent e) {	
+		Window window = (Window) SwingUtilities.windowForComponent(this);
+		window.CompareFiles();
 	}
 
 }
