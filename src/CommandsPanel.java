@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,6 +11,10 @@ import javax.swing.SwingUtilities;
 public class CommandsPanel extends JPanel 
 	implements ActionListener{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JButton button = new JButton("Compare files");
 	
 	public CommandsPanel() {
@@ -21,7 +24,7 @@ public class CommandsPanel extends JPanel
 		this.add(button);
 		
 		this.setBorder(BorderFactory.createLineBorder(Color.black));
-		this.setPreferredSize(new Dimension(1500, 200));
+		this.setPreferredSize(new Dimension(1600, 50));
 		
 	}
 	

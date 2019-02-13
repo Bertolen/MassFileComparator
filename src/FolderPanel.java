@@ -17,6 +17,10 @@ import javax.swing.SwingUtilities;
 public class FolderPanel extends JPanel 
 implements ActionListener {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	// header components
 	JButton button = new JButton("Choose folder");
 	JLabel folderPath = new JLabel("No folder selected");
