@@ -54,7 +54,7 @@ implements ActionListener {
 		list.setLayoutOrientation(JList.VERTICAL);
 		list.setVisibleRowCount(-1);
 		listPane = new JScrollPane(list);
-		listPane.setPreferredSize(new Dimension(600, 750));
+		listPane.setPreferredSize(new Dimension(600, 350));
 		
 		// On remplis notre panneau
 		this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:acmt.022.001.02">
+  <IdModAdvc>
+    <Assgnmt>
+      <MsgId>CAI-SDD-2019-02-14-A-00000004</MsgId>
+      <CreDtTm>2019-02-14T00:00:00</CreDtTm>
+      <Assgnr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>SOGEFRPPXXX</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Assgnr>
+      <Assgne>
+        <Pty>
+          <Id>
+            <OrgId>
+              <Othr>
+                <Id>FR7630003030005559955555540</Id>
+              </Othr>
+            </OrgId>
+          </Id>
+        </Pty>
+      </Assgne>
+    </Assgnmt>
+    <OrgnlTxRef>
+      <MsgNmId>pain.008</MsgNmId>
+    </OrgnlTxRef>
+    <Mod>
+      <Id>NOTPROVIDED</Id>
+      <UpdtdPtyAndAcctId>
+        <Pty>
+          <Nm>NOTPROVIDED</Nm>
+        </Pty>
+      </UpdtdPtyAndAcctId>
+    </Mod>
+  </IdModAdvc>
+</Document>

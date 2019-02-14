@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03">
+  <CstmrPmtStsRpt>
+    <GrpHdr>
+      <MsgId>WPGARE-14022019VD-ETP-M-0000000019</MsgId>
+      <CreDtTm>2019-02-14T00:00:00.00</CreDtTm>
+      <InitgPty>
+        <Id>
+          <OrgId>
+            <BICOrBEI>SOGEFRPP</BICOrBEI>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <OrgnlGrpInfAndSts>
+      <OrgnlMsgId>PRELEVEMENT PATRIC 20190204        </OrgnlMsgId>
+      <OrgnlMsgNmId>pain.002.001.03</OrgnlMsgNmId>
+    </OrgnlGrpInfAndSts>
+    <OrgnlPmtInfAndSts>
+      <OrgnlPmtInfId>140219FR7630003023500009930061794R</OrgnlPmtInfId>
+      <OrgnlNbOfTxs>3</OrgnlNbOfTxs>
+      <OrgnlCtrlSum>1596.38</OrgnlCtrlSum>
+      <PmtInfSts>ACSC</PmtInfSts>
+      <StsRsnInf>
+        <AddtlInf>ACCT FR7630003023500009930061794</AddtlInf>
+        <AddtlInf>NAME SOCIETE GENERALE</AddtlInf>
+        <AddtlInf>CCYS EUR</AddtlInf>
+        <AddtlInf>DATE 2019-02-14</AddtlInf>
+      </StsRsnInf>
+      <NbOfTxsPerSts>
+        <DtldNbOfTxs>3</DtldNbOfTxs>
+        <DtldSts>ACSC</DtldSts>
+        <DtldCtrlSum>1596.38</DtldCtrlSum>
+      </NbOfTxsPerSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00452267001196150481</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00452267001196150481</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>02350N2201903630287179</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">643.20</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>PA011FR960111007140045226700119615</MndtId>
+            <DtOfSgntr>2015-02-17</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>GERRIER JACCARINO BEATRICE</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630066104210002022960140</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>CMCIFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00452267001196160481</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00452267001196160481</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>02350N2201903630287180</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">783.18</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>PA011FR960111007140045226700119616</MndtId>
+            <DtOfSgntr>2015-02-17</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>GERRIER JACCARINO BEATRICE</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630066104210002022960140</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>CMCIFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00572335001503850071</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00572335001503850071</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>02350N2201903630287181</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">170.00</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>PA011FR960111007140057233500150385</MndtId>
+            <DtOfSgntr>2018-08-06</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>M MARTINEZ STEPHANE</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630003023040005194324022</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>SOGEFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+    </OrgnlPmtInfAndSts>
+    <OrgnlPmtInfAndSts>
+      <OrgnlPmtInfId>140219FR7630003017800009930061711R</OrgnlPmtInfId>
+      <OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+      <OrgnlCtrlSum>189.02</OrgnlCtrlSum>
+      <PmtInfSts>ACSC</PmtInfSts>
+      <StsRsnInf>
+        <AddtlInf>ACCT FR7630003017800009930061711</AddtlInf>
+        <AddtlInf>NAME SOCIETE GENERALE</AddtlInf>
+        <AddtlInf>CCYS EUR</AddtlInf>
+        <AddtlInf>DATE 2019-02-14</AddtlInf>
+      </StsRsnInf>
+      <NbOfTxsPerSts>
+        <DtldNbOfTxs>2</DtldNbOfTxs>
+        <DtldSts>ACSC</DtldSts>
+        <DtldCtrlSum>189.02</DtldCtrlSum>
+      </NbOfTxsPerSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00344806000909180741</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00344806000909180741</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>01780N2201903630287383</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">17.00</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>++011FR960111007140034480600090918</MndtId>
+            <DtOfSgntr>2012-10-04</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>MR OU MME BLANCHARD JEAN</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630003008640005091533091</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>SOGEFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00416770001381590261</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00416770001381590261</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>01780N2201903630287384</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">172.02</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>PA011FR960111007140041677000138159</MndtId>
+            <DtOfSgntr>2016-12-27</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>MME MAYEUR GENEVIEVE</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630004013720000073800645</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>BNPAFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+    </OrgnlPmtInfAndSts>
+    <OrgnlPmtInfAndSts>
+      <OrgnlPmtInfId>140219FR7630003022900009930061724R</OrgnlPmtInfId>
+      <OrgnlNbOfTxs>1</OrgnlNbOfTxs>
+      <OrgnlCtrlSum>36.00</OrgnlCtrlSum>
+      <PmtInfSts>ACSC</PmtInfSts>
+      <StsRsnInf>
+        <AddtlInf>ACCT FR7630003022900009930061724</AddtlInf>
+        <AddtlInf>NAME SOCIETE GENERALE</AddtlInf>
+        <AddtlInf>CCYS EUR</AddtlInf>
+        <AddtlInf>DATE 2019-02-14</AddtlInf>
+      </StsRsnInf>
+      <NbOfTxsPerSts>
+        <DtldNbOfTxs>1</DtldNbOfTxs>
+        <DtldSts>ACSC</DtldSts>
+        <DtldCtrlSum>36.00</DtldCtrlSum>
+      </NbOfTxsPerSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00193756000900750771</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00193756000900750771</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>02290N2201903630287757</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">36.00</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>++011FR960111007140019375600090075</MndtId>
+            <DtOfSgntr>2012-09-14</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>CHALMET YVES</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630003020080005101376272</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>SOGEFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+    </OrgnlPmtInfAndSts>
+    <OrgnlPmtInfAndSts>
+      <OrgnlPmtInfId>140219FR7630003022700009930061733R</OrgnlPmtInfId>
+      <OrgnlNbOfTxs>1</OrgnlNbOfTxs>
+      <OrgnlCtrlSum>50.00</OrgnlCtrlSum>
+      <PmtInfSts>ACSC</PmtInfSts>
+      <StsRsnInf>
+        <AddtlInf>ACCT FR7630003022700009930061733</AddtlInf>
+        <AddtlInf>NAME SOCIETE GENERALE</AddtlInf>
+        <AddtlInf>CCYS EUR</AddtlInf>
+        <AddtlInf>DATE 2019-02-14</AddtlInf>
+      </StsRsnInf>
+      <NbOfTxsPerSts>
+        <DtldNbOfTxs>1</DtldNbOfTxs>
+        <DtldSts>ACSC</DtldSts>
+        <DtldCtrlSum>50.00</DtldCtrlSum>
+      </NbOfTxsPerSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00595867001396500241</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00595867001396500241</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>02270N2201903630287774</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">50.00</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>PA011FR960111007140059586700139650</MndtId>
+            <DtOfSgntr>2017-02-23</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>M BALART MICKAEL</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7613825002000427923178838</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>CEPAFRPP382</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+    </OrgnlPmtInfAndSts>
+    <OrgnlPmtInfAndSts>
+      <OrgnlPmtInfId>140219FR7630003023600009930061741R</OrgnlPmtInfId>
+      <OrgnlNbOfTxs>1</OrgnlNbOfTxs>
+      <OrgnlCtrlSum>10.12</OrgnlCtrlSum>
+      <PmtInfSts>ACSC</PmtInfSts>
+      <StsRsnInf>
+        <AddtlInf>ACCT FR7630003023600009930061741</AddtlInf>
+        <AddtlInf>NAME SOCIETE GENERALE</AddtlInf>
+        <AddtlInf>CCYS EUR</AddtlInf>
+        <AddtlInf>DATE 2019-02-14</AddtlInf>
+      </StsRsnInf>
+      <NbOfTxsPerSts>
+        <DtldNbOfTxs>1</DtldNbOfTxs>
+        <DtldSts>ACSC</DtldSts>
+        <DtldCtrlSum>10.12</DtldCtrlSum>
+      </NbOfTxsPerSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00504953001247960421</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00504953001247960421</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>02360N2201903630287830</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">10.12</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>PA011FR960111007140050495300124796</MndtId>
+            <DtOfSgntr>2015-08-04</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>M ET MME SINTEFF</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630003023940005009355991</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>SOGEFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+    </OrgnlPmtInfAndSts>
+  </CstmrPmtStsRpt>
+</Document>

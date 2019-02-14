@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:camt.054.001.02">
+  <BkToCstmrDbtCdtNtfctn>
+    <GrpHdr>
+      <MsgId>WPGFAE-14022019VA-SFA-M-00000000001</MsgId>
+      <CreDtTm>2019-02-14T00:00:00.00</CreDtTm>
+    </GrpHdr>

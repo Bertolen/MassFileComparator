@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03">
+  <CstmrPmtStsRpt>
+    <GrpHdr>
+      <MsgId>WPGARE-14022019VD-ETP-M-0000000007</MsgId>
+      <CreDtTm>2019-02-14T00:00:00.00</CreDtTm>
+      <InitgPty>
+        <Id>
+          <OrgId>
+            <BICOrBEI>SOGEFRPP</BICOrBEI>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <OrgnlGrpInfAndSts>
+      <OrgnlMsgId>PRELEVEMENT PATRIC 20190204        </OrgnlMsgId>
+      <OrgnlMsgNmId>pain.002.001.03</OrgnlMsgNmId>
+    </OrgnlGrpInfAndSts>
+    <OrgnlPmtInfAndSts>
+      <OrgnlPmtInfId>140219FR7630003014700009930061705R</OrgnlPmtInfId>
+      <OrgnlNbOfTxs>2</OrgnlNbOfTxs>
+      <OrgnlCtrlSum>172.26</OrgnlCtrlSum>
+      <PmtInfSts>ACSC</PmtInfSts>
+      <StsRsnInf>
+        <AddtlInf>ACCT FR7630003014700009930061705</AddtlInf>
+        <AddtlInf>NAME SOCIETE GENERALE</AddtlInf>
+        <AddtlInf>CCYS EUR</AddtlInf>
+        <AddtlInf>DATE 2019-02-14</AddtlInf>
+      </StsRsnInf>
+      <NbOfTxsPerSts>
+        <DtldNbOfTxs>2</DtldNbOfTxs>
+        <DtldSts>ACSC</DtldSts>
+        <DtldCtrlSum>172.26</DtldCtrlSum>
+      </NbOfTxsPerSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00160088000793140851</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00160088000793140851</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>01470N2201903630287812</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">12.26</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>++011FR960111007140016008800079314</MndtId>
+            <DtOfSgntr>2011-12-07</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>LIEBENGUTH Jean</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7614445004000400189282626</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>CEPAFRPP444</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00160088001525510851</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00160088001525510851</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>01470N2201903630287813</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">160.00</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>PA011FR960111007140016008800152551</MndtId>
+            <DtOfSgntr>2018-12-18</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>LIEBENGUTH JEAN</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7614445004000400189282626</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>CEPAFRPP444</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+    </OrgnlPmtInfAndSts>
+  </CstmrPmtStsRpt>
+</Document>

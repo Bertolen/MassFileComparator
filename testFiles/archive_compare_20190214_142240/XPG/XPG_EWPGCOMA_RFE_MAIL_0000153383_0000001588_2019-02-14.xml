@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rapport>
+  <WPG_FAE>
+    <enteteTechnique>
+      <demandeur>
+        <identifiant>15338301</identifiant>
+      </demandeur>
+      <document>
+        <doc nom="FAE" version="1.0" application="WPG"/>
+        <libelle_reference>WPG_Canal_email</libelle_reference>
+      </document>
+      <distribution>
+        <retourPDF>N</retourPDF>
+        <distribution_MAIA>N</distribution_MAIA>
+        <distribution_cap18>N</distribution_cap18>
+        <distribution_email>N</distribution_email>
+        <email>
+          <sender>
+            <name>PHARE-WPG</name>
+            <address><![CDATA[service.restitmailsocgen.com]]></address>
+          </sender>
+          <recipients>
+            <to><![CDATA[sophie.muylaertsocgen.com]]></to>
+            <cc><![CDATA[mails.pharesocgen.com]]></cc>
+          </recipients>
+          <subject>FAE*SOGEFRPP*14/02/19*A*FR99WPSISB001/T*0000153383*0000001588</subject>
+          <message><![CDATA[<br/><i><span style=font-size:10.0pt;font-family:Arial>Conformément à votre demande, nous avons le plaisir de vous adresser, en pièce jointe, votre Relevé de Factures Acceptées à Echéance.      </span></i><br/><i><span style=font-size:10.0pt;font-family:Arial>Pour toute information complémentaire sur ce relevé, nous vous prions de vous adresser à votre interlocuteur Société Générale habituel.      </span></i><i><span style=font-size:10.0pt;font-family:Arial>Ce mail est envoyé automatiquement ; Les messages de réponse ne sont pas traités.</span></i>]]></message>
+          <attachment_name>FAE_SOGEFRPP_20190214_0000153383_0001588_05.pdf</attachment_name>
+        </email>
+      </distribution>
+      <archivage>
+        <code_archivage>N</code_archivage>
+      </archivage>
+    </enteteTechnique>
+    <multiDocument>
+      <multiDoc>O</multiDoc>
+      <id>709460363</id>
+      <num>005</num>
+      <total>005</total>
+      <complet>O</complet>
+    </multiDocument>
+  </WPG_FAE>
+</Rapport>

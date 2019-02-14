@@ -1,3 +1,4 @@
+import java.awt.Dimension;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -41,19 +42,26 @@ public class Window extends JFrame{
 	    //Termine le processus lorsqu'on clique sur la croix rouge
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    
-	    // on fait l'entête de notre fenêtre
-	    JPanel northPan = new JPanel();
-	    northPan.setLayout(new BoxLayout(northPan, BoxLayout.LINE_AXIS));
-	    northPan.add(folderPanel1);
-	    northPan.add(folderPanel2);
-	    northPan.add(resultsPanel);
+	    // on fait le panneau des fichiers
+	    JPanel foldersPanel = new JPanel();
+	    foldersPanel.setLayout(new BoxLayout(foldersPanel, BoxLayout.PAGE_AXIS));
+	    foldersPanel.add(folderPanel1);
+	    foldersPanel.add(folderPanel2);
+//	    foldersPanel.setSize(600, 700);
+//	    foldersPanel.setPreferredSize(new Dimension(600, 700));
+
+	    // on fait le panneau central
+	    JPanel centralPanel = new JPanel();
+	    centralPanel.setLayout(new BoxLayout(centralPanel, BoxLayout.LINE_AXIS));
+	    centralPanel.add(foldersPanel);
+	    centralPanel.add(resultsPanel);
 	    
 	    // Le bouton de comparaison commence désactivé
 		cmdPanel.button.setEnabled(false);
 	    
 	    // on ajoute nos panneaux à notre fenêtre
 	    this.getContentPane().setLayout(new BoxLayout(this.getContentPane(), BoxLayout.PAGE_AXIS));
-	    this.getContentPane().add(northPan);
+	    this.getContentPane().add(centralPanel);
 	    this.getContentPane().add(cmdPanel);
 	    
 	    //Et enfin, on rends la fenêtre visible        
@@ -80,20 +88,21 @@ public class Window extends JFrame{
 		
 		String path1 = folderPanel1.getFolderPath();
 		String path2 = folderPanel2.getFolderPath();
-		Vector<String> files = (Vector<String>) resultsPanel.commonFiles.clone();
+		Vector<String> files1 = (Vector<String>) resultsPanel.commonFiles1.clone();
+		Vector<String> files2 = (Vector<String>) resultsPanel.commonFiles2.clone();
 		
-		for (String file : files) {
-			CompareXmlFile(file, path1, path2);
+		for (int i = 0; i < files1.size(); i++) {
+			CompareXmlFile(files1.get(i), path1, files2.get(i), path2);
 		} 
 	}
 	
-	void CompareXmlFile(String file, String path1, String path2) {
+	void CompareXmlFile(String file1, String path1, String file2, String path2) {
 		try {
 			// reading two xml file to compare in Java program 
-			System.out.println("fichier 1 : " + path1 + "/" + file);
-			System.out.println("fichier 2 : " + path2 + "/" + file);
-			FileInputStream fis1 = new FileInputStream(path1 + "/" + file); 
-			FileInputStream fis2 = new FileInputStream(path2 + "/" + file);
+			System.out.println("fichier 1 : " + path1 + "/" + file1);
+			System.out.println("fichier 2 : " + path2 + "/" + file2);
+			FileInputStream fis1 = new FileInputStream(path1 + "/" + file1); 
+			FileInputStream fis2 = new FileInputStream(path2 + "/" + file2);
 			
 			// using BufferedReader for improved performance 
 			BufferedReader source = new BufferedReader(new InputStreamReader(fis1)); 
@@ -106,10 +115,9 @@ public class Window extends JFrame{
 			List<Difference> differences = compareXML(source, target);
 			
 			// showing differences found in two xml files
-			printDifferences(differences);
+			resultsPanel.printDifferences(differences, file1);
 			
 		} catch (SAXException | IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -123,19 +131,5 @@ public class Window extends JFrame{
 		DetailedDiff detailXmlDiff = new DetailedDiff(xmlDiff); 
 		
 		return detailXmlDiff.getAllDifferences(); 
-	} 
-	
-	public static void printDifferences(List<Difference> differences){ 
-		
-		int totalDifferences = differences.size(); 
-		System.out.println("==============================="); 
-		System.out.println("Total differences : " + totalDifferences); 
-		System.out.println("================================"); 
-		
-		for(Difference difference : differences){ 
-			System.out.println(difference); 
-			System.out.println(difference.getControlNodeDetail().getValue());
-			System.out.println(difference.getControlNodeDetail().getXpathLocation()); 
-		} 
 	}
 }

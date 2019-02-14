@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03">
+  <CstmrPmtStsRpt>
+    <GrpHdr>
+      <MsgId>WPGARE-14022019VD-ETP-M-0000000009</MsgId>
+      <CreDtTm>2019-02-14T00:00:00.00</CreDtTm>
+      <InitgPty>
+        <Id>
+          <OrgId>
+            <BICOrBEI>SOGEFRPP</BICOrBEI>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <OrgnlGrpInfAndSts>
+      <OrgnlMsgId>PRELEVEMENT PATRIC 20190204        </OrgnlMsgId>
+      <OrgnlMsgNmId>pain.002.001.03</OrgnlMsgNmId>
+    </OrgnlGrpInfAndSts>
+    <OrgnlPmtInfAndSts>
+      <OrgnlPmtInfId>140219FR7630003012500009930061707R</OrgnlPmtInfId>
+      <OrgnlNbOfTxs>3</OrgnlNbOfTxs>
+      <OrgnlCtrlSum>323.62</OrgnlCtrlSum>
+      <PmtInfSts>ACSC</PmtInfSts>
+      <StsRsnInf>
+        <AddtlInf>ACCT FR7630003012500009930061707</AddtlInf>
+        <AddtlInf>NAME SOCIETE GENERALE</AddtlInf>
+        <AddtlInf>CCYS EUR</AddtlInf>
+        <AddtlInf>DATE 2019-02-14</AddtlInf>
+      </StsRsnInf>
+      <NbOfTxsPerSts>
+        <DtldNbOfTxs>3</DtldNbOfTxs>
+        <DtldSts>ACSC</DtldSts>
+        <DtldCtrlSum>323.62</DtldCtrlSum>
+      </NbOfTxsPerSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00194819000706360951</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00194819000706360951</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>01250N2201903630287869</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">300.00</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>++011FR960111007140019481900070636</MndtId>
+            <DtOfSgntr>2011-04-04</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>PATRICK NAUSSIBOU</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7618706000001695455600041</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>AGRIFRPP887</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00244156000936310731</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00244156000936310731</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>01250N2201903630287870</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">10.31</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>++011FR960111007140024415600093631</MndtId>
+            <DtOfSgntr>2012-12-13</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>RAPIN</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630003013470005003848904</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>SOGEFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+      <TxInfAndSts>
+        <OrgnlInstrId>PRELVT SG 00244156000936320731</OrgnlInstrId>
+        <OrgnlEndToEndId>PRELVT SG 00244156000936320731</OrgnlEndToEndId>
+        <TxSts>ACSC</TxSts>
+        <StsRsnInf/>
+        <AcctSvcrRef>01250N2201903630287871</AcctSvcrRef>
+        <OrgnlTxRef>
+          <Amt>
+            <InstdAmt Ccy="EUR">13.31</InstdAmt>
+          </Amt>
+          <ReqdColltnDt>2019-02-14</ReqdColltnDt>
+          <CdtrSchmeId>
+            <Id>
+              <PrvtId>
+                <Othr>
+                  <Id>FR96011100714</Id>
+                  <SchmeNm>
+                    <Prtry>SEPA</Prtry>
+                  </SchmeNm>
+                </Othr>
+              </PrvtId>
+            </Id>
+          </CdtrSchmeId>
+          <PmtTpInf>
+            <SvcLvl>
+              <Cd>SEPA</Cd>
+            </SvcLvl>
+            <LclInstrm>
+              <Cd>CORE</Cd>
+            </LclInstrm>
+            <SeqTp>RCUR</SeqTp>
+          </PmtTpInf>
+          <PmtMtd>DD</PmtMtd>
+          <MndtRltdInf>
+            <MndtId>++011FR960111007140024415600093632</MndtId>
+            <DtOfSgntr>2012-12-13</DtOfSgntr>
+          </MndtRltdInf>
+          <RmtInf>
+            <Ustrd>ECHEANCE DU 2019-02-14</Ustrd>
+          </RmtInf>
+          <Dbtr>
+            <Nm>RAPIN</Nm>
+          </Dbtr>
+          <DbtrAcct>
+            <Id>
+              <IBAN>FR7630003013470005003848904</IBAN>
+            </Id>
+          </DbtrAcct>
+          <DbtrAgt>
+            <FinInstnId>
+              <BIC>SOGEFRPPXXX</BIC>
+            </FinInstnId>
+          </DbtrAgt>
+        </OrgnlTxRef>
+      </TxInfAndSts>
+    </OrgnlPmtInfAndSts>
+  </CstmrPmtStsRpt>
+</Document>

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rapport>
+  <WPG_FAE>
+    <enteteTechnique>
+      <demandeur>
+        <identifiant>15338301</identifiant>
+      </demandeur>
+      <document>
+        <doc nom="FAE" version="1.0" application="WPG"/>
+        <libelle_reference>WPG_Canal_email</libelle_reference>
+      </document>
+      <distribution>
+        <retourPDF>N</retourPDF>
+        <distribution_MAIA>N</distribution_MAIA>
+        <distribution_cap18>N</distribution_cap18>
+        <distribution_email>N</distribution_email>
+        <email>
+          <sender>
+            <name>PHARE-WPG</name>
+            <address><![CDATA[service.restitmailsocgen.com]]></address>
+          </sender>
+          <recipients>
+            <to><![CDATA[sophie.muylaertsocgen.com]]></to>
+            <cc><![CDATA[mails.pharesocgen.com]]></cc>
+          </recipients>
+          <subject>FAE*SOGEFRPP*14/02/19*A*FR99WPSISB001/T*0000153383*0000001588</subject>
+          <message><![CDATA[<br/><i><span style=font-size:10.0pt;font-family:Arial>Conformément &agrave votre demande, nous avons le plaisir de vous adresser, en pièce jointe, votre Relevé de Factures Acceptées à Echéance.</span></i><br/><i><span style=font-size:10.0pt;font-family:Arial>Pour toute information complémentaire sur ce relevé, nous vous prions de vous adresser &agrave votre interlocuteur Société Générale habituel.</span></i><i><span style=font-size:10.0pt;font-family:Arial>Ce mail est envoyé automatiquement ; Les messages de réponse ne sont pas traités.</span></i>]]></message>
+          <attachment_name>FAE_SOGEFRPP_20190214_09313269_0000153383_00001588_01.pdf</attachment_name>
+        </email>
+      </distribution>
+      <archivage>
+        <code_archivage>N</code_archivage>
+      </archivage>
+    </enteteTechnique>
+    <multiDocument>
+      <multiDoc>O</multiDoc>
+      <id>FAE2019021409313269</id>
+      <num>001</num>
+      <total>005</total>
+      <complet>N</complet>
+    </multiDocument>
+    <donnees>
+      <EnteteMail>
+        <Date><![CDATA[14/02/2019]]></Date>
+        <NumAvis><![CDATA[0001588]]></NumAvis>
+        <LibAdresseMailFax><![CDATA[Document adressé sur le mail principal:]]></LibAdresseMailFax>
+        <AdresseMail><![CDATA[sophie.muylaertsocgen.com]]></AdresseMail>
+        <CodeLangue><![CDATA[FRA]]></CodeLangue>
+        <CodeBanque><![CDATA[30003]]></CodeBanque>
+        <LibelleBasdePage><![CDATA[Ce relevé vous est communiqué à titre indicatif. Pour toute information complémentaire, veuillez vous adresser à vos contacts habituels.    ]]></LibelleBasdePage>
+      </EnteteMail>
+      <EnteteDestinataire>
+        <Agence><![CDATA[ZZZZZ]]></Agence>
+        <RaisonSociale><![CDATA[TEST ISB]]></RaisonSociale>
+        <Reference><![CDATA[0000153383-0001588-01]]></Reference>
+      </EnteteDestinataire>
+      <BlocOperations>
+        <EnteteBloc>
+          <LibNomDo><![CDATA[Nom du Donneur d'ordre]]></LibNomDo>
+          <LibCompteDo><![CDATA[Coordonnées bancaires]]></LibCompteDo>
+          <LibBic><![CDATA[BIC]]></LibBic>
+          <LibDatExeDem><![CDATA[Date Exe. Demandée]]></LibDatExeDem>
+          <LibDatExeApp><![CDATA[Date Exe. Appliquée]]></LibDatExeApp>
+          <LibReferenceDo><![CDATA[Référence]]></LibReferenceDo>
+          <LibNb><![CDATA[Nombre]]></LibNb>
+          <LibTotal><![CDATA[Montant total de FAE]]></LibTotal>
+          <LibDevise><![CDATA[Dev]]></LibDevise>
+          <NomDo><![CDATA[MOUSSET SERVICES FRIGO]]></NomDo>
+          <CompteDo><![CDATA[FR76 3000 3017 4900 0201 0418 218]]></CompteDo>
+          <Bic><![CDATA[SOGEFRPP]]></Bic>
+          <DatExeDem><![CDATA[14/02/2019]]></DatExeDem>
+          <DatExeApp><![CDATA[14/02/2019]]></DatExeApp>
+          <ReferenceDo><![CDATA[SOGEFRPP-2019-02-12T10:30:37]]></ReferenceDo>
+          <Nbre><![CDATA[2]]></Nbre>
+          <Total><![CDATA[92725,97]]></Total>
+          <Devise><![CDATA[EUR]]></Devise>
+          <LibNomDest><![CDATA[Nom du fournisseur]]></LibNomDest>
+          <LibBicOpt><![CDATA[BIC]]></LibBicOpt>
+          <LibRefCli><![CDATA[Référence client]]></LibRefCli>
+          <LibMntOp><![CDATA[Montant]]></LibMntOp>
+          <LibDevOp><![CDATA[Dev]]></LibDevOp>
+          <LibRefCom><![CDATA[Référence commerciale]]></LibRefCom>
+          <LibMotPmnt><![CDATA[Motif de paiement]]></LibMotPmnt>
+          <LibDatReg><![CDATA[Date de règlement]]></LibDatReg>
+        </EnteteBloc>
+        <Operation>
+          <NomDest><![CDATA[SAGA (IMMOS PORTEUR)]]></NomDest>
+          <BicOp><![CDATA[AGRIFRPP847]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[92348,40]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0005677]]></RefCom>
+          <MotPmnt><![CDATA[20895 /20895]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+        <Operation>
+          <NomDest><![CDATA[STM Carroserie]]></NomDest>
+          <BicOp><![CDATA[CMCIFR2A]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[377,57]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0005679]]></RefCom>
+          <MotPmnt><![CDATA[FA011727 /FA011727]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+      </BlocOperations>
+      <BlocOperations>
+        <EnteteBloc>
+          <LibNomDo><![CDATA[Nom du Donneur d'ordre]]></LibNomDo>
+          <LibCompteDo><![CDATA[Coordonnées bancaires]]></LibCompteDo>
+          <LibBic><![CDATA[BIC]]></LibBic>
+          <LibDatExeDem><![CDATA[Date Exe. Demandée]]></LibDatExeDem>
+          <LibDatExeApp><![CDATA[Date Exe. Appliquée]]></LibDatExeApp>
+          <LibReferenceDo><![CDATA[Référence]]></LibReferenceDo>
+          <LibNb><![CDATA[Nombre]]></LibNb>
+          <LibTotal><![CDATA[Montant total de FAE]]></LibTotal>
+          <LibDevise><![CDATA[Dev]]></LibDevise>
+          <NomDo><![CDATA[MOUSSET SERVICES FRIGO]]></NomDo>
+          <CompteDo><![CDATA[FR76 3000 3017 4900 0201 0418 218]]></CompteDo>
+          <Bic><![CDATA[SOGEFRPP]]></Bic>
+          <DatExeDem><![CDATA[18/02/2019]]></DatExeDem>
+          <DatExeApp><![CDATA[18/02/2019]]></DatExeApp>
+          <ReferenceDo><![CDATA[SOGEFRPP-2019-02-12T10:30:37]]></ReferenceDo>
+          <Nbre><![CDATA[1]]></Nbre>
+          <Total><![CDATA[68682,00]]></Total>
+          <Devise><![CDATA[EUR]]></Devise>
+          <LibNomDest><![CDATA[Nom du fournisseur]]></LibNomDest>
+          <LibBicOpt><![CDATA[BIC]]></LibBicOpt>
+          <LibRefCli><![CDATA[Référence client]]></LibRefCli>
+          <LibMntOp><![CDATA[Montant]]></LibMntOp>
+          <LibDevOp><![CDATA[Dev]]></LibDevOp>
+          <LibRefCom><![CDATA[Référence commerciale]]></LibRefCom>
+          <LibMotPmnt><![CDATA[Motif de paiement]]></LibMotPmnt>
+          <LibDatReg><![CDATA[Date de règlement]]></LibDatReg>
+        </EnteteBloc>
+        <Operation>
+          <NomDest><![CDATA[NATIXIS FACTOR]]></NomDest>
+          <BicOp><![CDATA[NATXFRPP]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[68682,00]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0005678]]></RefCom>
+          <MotPmnt><![CDATA[00080052 /00080052]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+      </BlocOperations>
+    </donnees>
+  </WPG_FAE>
+</Rapport>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rapport>
+  <WPG_FAE>
+    <enteteTechnique>
+      <demandeur>
+        <identifiant>15338301</identifiant>
+      </demandeur>
+      <document>
+        <doc nom="FAE" version="1.0" application="WPG"/>
+        <libelle_reference>WPG_Canal_email</libelle_reference>
+      </document>
+      <distribution>
+        <retourPDF>N</retourPDF>
+        <distribution_MAIA>N</distribution_MAIA>
+        <distribution_cap18>N</distribution_cap18>
+        <distribution_email>N</distribution_email>
+        <email>
+          <sender>
+            <name>PHARE-WPG</name>
+            <address><![CDATA[service.restitmailsocgen.com]]></address>
+          </sender>
+          <recipients>
+            <to><![CDATA[sophie.muylaertsocgen.com]]></to>
+            <cc><![CDATA[mails.pharesocgen.com]]></cc>
+          </recipients>
+          <subject>FAE*SOGEFRPP*14/02/19*A*FR99WPSISB001/T*0000153383*0000001588</subject>
+          <message><![CDATA[<br/><i><span style=font-size:10.0pt;font-family:Arial>Conformément &agrave votre demande, nous avons le plaisir de vous adresser, en pièce jointe, votre Relevé de Factures Acceptées à Echéance.</span></i><br/><i><span style=font-size:10.0pt;font-family:Arial>Pour toute information complémentaire sur ce relevé, nous vous prions de vous adresser &agrave votre interlocuteur Société Générale habituel.</span></i><i><span style=font-size:10.0pt;font-family:Arial>Ce mail est envoyé automatiquement ; Les messages de réponse ne sont pas traités.</span></i>]]></message>
+          <attachment_name>FAE_SOGEFRPP_20190214_09313269_0000153383_00001588_02.pdf</attachment_name>
+        </email>
+      </distribution>
+      <archivage>
+        <code_archivage>N</code_archivage>
+      </archivage>
+    </enteteTechnique>
+    <multiDocument>
+      <multiDoc>O</multiDoc>
+      <id>FAE2019021409313269</id>
+      <num>002</num>
+      <total>005</total>
+      <complet>N</complet>
+    </multiDocument>
+    <donnees>
+      <EnteteMail>
+        <Date><![CDATA[14/02/2019]]></Date>
+        <NumAvis><![CDATA[0001588]]></NumAvis>
+        <LibAdresseMailFax><![CDATA[Document adressé sur le mail principal:]]></LibAdresseMailFax>
+        <AdresseMail><![CDATA[sophie.muylaertsocgen.com]]></AdresseMail>
+        <CodeLangue><![CDATA[FRA]]></CodeLangue>
+        <CodeBanque><![CDATA[30003]]></CodeBanque>
+        <LibelleBasdePage><![CDATA[Ce relevé vous est communiqué à titre indicatif. Pour toute information complémentaire, veuillez vous adresser à vos contacts habituels.    ]]></LibelleBasdePage>
+      </EnteteMail>
+      <EnteteDestinataire>
+        <Agence><![CDATA[ZZZZZ]]></Agence>
+        <RaisonSociale><![CDATA[TEST ISB]]></RaisonSociale>
+        <Reference><![CDATA[0000153383-0001588-02]]></Reference>
+      </EnteteDestinataire>
+      <BlocOperations>
+        <EnteteBloc>
+          <LibNomDo><![CDATA[Nom du Donneur d'ordre]]></LibNomDo>
+          <LibCompteDo><![CDATA[Coordonnées bancaires]]></LibCompteDo>
+          <LibBic><![CDATA[BIC]]></LibBic>
+          <LibDatExeDem><![CDATA[Date Exe. Demandée]]></LibDatExeDem>
+          <LibDatExeApp><![CDATA[Date Exe. Appliquée]]></LibDatExeApp>
+          <LibReferenceDo><![CDATA[Référence]]></LibReferenceDo>
+          <LibNb><![CDATA[Nombre]]></LibNb>
+          <LibTotal><![CDATA[Montant total de FAE]]></LibTotal>
+          <LibDevise><![CDATA[Dev]]></LibDevise>
+          <NomDo><![CDATA[TRANSPORTS PINEAU]]></NomDo>
+          <CompteDo><![CDATA[FR76 3000 3017 4900 0204 1127 254]]></CompteDo>
+          <Bic><![CDATA[SOGEFRPP]]></Bic>
+          <DatExeDem><![CDATA[19/02/2019]]></DatExeDem>
+          <DatExeApp><![CDATA[19/02/2019]]></DatExeApp>
+          <ReferenceDo><![CDATA[SOGEFRPP-2019-02-06T18:35:30]]></ReferenceDo>
+          <Nbre><![CDATA[1]]></Nbre>
+          <Total><![CDATA[108,00]]></Total>
+          <Devise><![CDATA[EUR]]></Devise>
+          <LibNomDest><![CDATA[Nom du fournisseur]]></LibNomDest>
+          <LibBicOpt><![CDATA[BIC]]></LibBicOpt>
+          <LibRefCli><![CDATA[Référence client]]></LibRefCli>
+          <LibMntOp><![CDATA[Montant]]></LibMntOp>
+          <LibDevOp><![CDATA[Dev]]></LibDevOp>
+          <LibRefCom><![CDATA[Référence commerciale]]></LibRefCom>
+          <LibMotPmnt><![CDATA[Motif de paiement]]></LibMotPmnt>
+          <LibDatReg><![CDATA[Date de règlement]]></LibDatReg>
+        </EnteteBloc>
+        <Operation>
+          <NomDest><![CDATA[JB TRANS]]></NomDest>
+          <BicOp><![CDATA[CMCIFRPP]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[108,00]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0020961]]></RefCom>
+          <MotPmnt><![CDATA[20190131-4 /20190131-4]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+      </BlocOperations>
+    </donnees>
+  </WPG_FAE>
+</Rapport>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rapport>
+  <WPG_FAE>
+    <enteteTechnique>
+      <demandeur>
+        <identifiant>15338301</identifiant>
+      </demandeur>
+      <document>
+        <doc nom="FAE" version="1.0" application="WPG"/>
+        <libelle_reference>WPG_Canal_email</libelle_reference>
+      </document>
+      <distribution>
+        <retourPDF>N</retourPDF>
+        <distribution_MAIA>N</distribution_MAIA>
+        <distribution_cap18>N</distribution_cap18>
+        <distribution_email>N</distribution_email>
+        <email>
+          <sender>
+            <name>PHARE-WPG</name>
+            <address><![CDATA[service.restitmailsocgen.com]]></address>
+          </sender>
+          <recipients>
+            <to><![CDATA[sophie.muylaertsocgen.com]]></to>
+            <cc><![CDATA[mails.pharesocgen.com]]></cc>
+          </recipients>
+          <subject>FAE*SOGEFRPP*14/02/19*A*FR99WPSISB001/T*0000153383*0000001588</subject>
+          <message><![CDATA[<br/><i><span style=font-size:10.0pt;font-family:Arial>Conformément &agrave votre demande, nous avons le plaisir de vous adresser, en pièce jointe, votre Relevé de Factures Acceptées à Echéance.</span></i><br/><i><span style=font-size:10.0pt;font-family:Arial>Pour toute information complémentaire sur ce relevé, nous vous prions de vous adresser &agrave votre interlocuteur Société Générale habituel.</span></i><i><span style=font-size:10.0pt;font-family:Arial>Ce mail est envoyé automatiquement ; Les messages de réponse ne sont pas traités.</span></i>]]></message>
+          <attachment_name>FAE_SOGEFRPP_20190214_09313269_0000153383_00001588_03.pdf</attachment_name>
+        </email>
+      </distribution>
+      <archivage>
+        <code_archivage>N</code_archivage>
+      </archivage>
+    </enteteTechnique>
+    <multiDocument>
+      <multiDoc>O</multiDoc>
+      <id>FAE2019021409313269</id>
+      <num>003</num>
+      <total>005</total>
+      <complet>N</complet>
+    </multiDocument>
+    <donnees>
+      <EnteteMail>
+        <Date><![CDATA[14/02/2019]]></Date>
+        <NumAvis><![CDATA[0001588]]></NumAvis>
+        <LibAdresseMailFax><![CDATA[Document adressé sur le mail principal:]]></LibAdresseMailFax>
+        <AdresseMail><![CDATA[sophie.muylaertsocgen.com]]></AdresseMail>
+        <CodeLangue><![CDATA[FRA]]></CodeLangue>
+        <CodeBanque><![CDATA[30003]]></CodeBanque>
+        <LibelleBasdePage><![CDATA[Ce relevé vous est communiqué à titre indicatif. Pour toute information complémentaire, veuillez vous adresser à vos contacts habituels.    ]]></LibelleBasdePage>
+      </EnteteMail>
+      <EnteteDestinataire>
+        <Agence><![CDATA[ZZZZZ]]></Agence>
+        <RaisonSociale><![CDATA[TEST ISB]]></RaisonSociale>
+        <Reference><![CDATA[0000153383-0001588-03]]></Reference>
+      </EnteteDestinataire>
+      <BlocOperations>
+        <EnteteBloc>
+          <LibNomDo><![CDATA[Nom du Donneur d'ordre]]></LibNomDo>
+          <LibCompteDo><![CDATA[Coordonnées bancaires]]></LibCompteDo>
+          <LibBic><![CDATA[BIC]]></LibBic>
+          <LibDatExeDem><![CDATA[Date Exe. Demandée]]></LibDatExeDem>
+          <LibDatExeApp><![CDATA[Date Exe. Appliquée]]></LibDatExeApp>
+          <LibReferenceDo><![CDATA[Référence]]></LibReferenceDo>
+          <LibNb><![CDATA[Nombre]]></LibNb>
+          <LibTotal><![CDATA[Montant total de FAE]]></LibTotal>
+          <LibDevise><![CDATA[Dev]]></LibDevise>
+          <NomDo><![CDATA[MOUSSET LOCATION]]></NomDo>
+          <CompteDo><![CDATA[FR76 3000 3017 4900 0204 1129 873]]></CompteDo>
+          <Bic><![CDATA[SOGEFRPP]]></Bic>
+          <DatExeDem><![CDATA[14/02/2019]]></DatExeDem>
+          <DatExeApp><![CDATA[14/02/2019]]></DatExeApp>
+          <ReferenceDo><![CDATA[SOGEFRPP-2019-02-12T10:23:11]]></ReferenceDo>
+          <Nbre><![CDATA[1]]></Nbre>
+          <Total><![CDATA[23814,00]]></Total>
+          <Devise><![CDATA[EUR]]></Devise>
+          <LibNomDest><![CDATA[Nom du fournisseur]]></LibNomDest>
+          <LibBicOpt><![CDATA[BIC]]></LibBicOpt>
+          <LibRefCli><![CDATA[Référence client]]></LibRefCli>
+          <LibMntOp><![CDATA[Montant]]></LibMntOp>
+          <LibDevOp><![CDATA[Dev]]></LibDevOp>
+          <LibRefCom><![CDATA[Référence commerciale]]></LibRefCom>
+          <LibMotPmnt><![CDATA[Motif de paiement]]></LibMotPmnt>
+          <LibDatReg><![CDATA[Date de règlement]]></LibDatReg>
+        </EnteteBloc>
+        <Operation>
+          <NomDest><![CDATA[SARRES SARL]]></NomDest>
+          <BicOp><![CDATA[CCBPFRPPBDX]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[23814,00]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0009076]]></RefCom>
+          <MotPmnt><![CDATA[F180139 /F180139]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+      </BlocOperations>
+      <BlocOperations>
+        <EnteteBloc>
+          <LibNomDo><![CDATA[Nom du Donneur d'ordre]]></LibNomDo>
+          <LibCompteDo><![CDATA[Coordonnées bancaires]]></LibCompteDo>
+          <LibBic><![CDATA[BIC]]></LibBic>
+          <LibDatExeDem><![CDATA[Date Exe. Demandée]]></LibDatExeDem>
+          <LibDatExeApp><![CDATA[Date Exe. Appliquée]]></LibDatExeApp>
+          <LibReferenceDo><![CDATA[Référence]]></LibReferenceDo>
+          <LibNb><![CDATA[Nombre]]></LibNb>
+          <LibTotal><![CDATA[Montant total de FAE]]></LibTotal>
+          <LibDevise><![CDATA[Dev]]></LibDevise>
+          <NomDo><![CDATA[MOUSSET LOCATION]]></NomDo>
+          <CompteDo><![CDATA[FR76 3000 3017 4900 0204 1129 873]]></CompteDo>
+          <Bic><![CDATA[SOGEFRPP]]></Bic>
+          <DatExeDem><![CDATA[19/02/2019]]></DatExeDem>
+          <DatExeApp><![CDATA[19/02/2019]]></DatExeApp>
+          <ReferenceDo><![CDATA[SOGEFRPP-2019-01-15T08:23:51]]></ReferenceDo>
+          <Nbre><![CDATA[1]]></Nbre>
+          <Total><![CDATA[211,31]]></Total>
+          <Devise><![CDATA[EUR]]></Devise>
+          <LibNomDest><![CDATA[Nom du fournisseur]]></LibNomDest>
+          <LibBicOpt><![CDATA[BIC]]></LibBicOpt>
+          <LibRefCli><![CDATA[Référence client]]></LibRefCli>
+          <LibMntOp><![CDATA[Montant]]></LibMntOp>
+          <LibDevOp><![CDATA[Dev]]></LibDevOp>
+          <LibRefCom><![CDATA[Référence commerciale]]></LibRefCom>
+          <LibMotPmnt><![CDATA[Motif de paiement]]></LibMotPmnt>
+          <LibDatReg><![CDATA[Date de règlement]]></LibDatReg>
+        </EnteteBloc>
+        <Operation>
+          <NomDest><![CDATA[SPPL]]></NomDest>
+          <BicOp><![CDATA[CCBPFRPPBDX]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[211,31]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0008893]]></RefCom>
+          <MotPmnt><![CDATA[10096 /10096]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+      </BlocOperations>
+    </donnees>
+  </WPG_FAE>
+</Rapport>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rapport>
+  <WPG_FAE>
+    <enteteTechnique>
+      <demandeur>
+        <identifiant>15338301</identifiant>
+      </demandeur>
+      <document>
+        <doc nom="FAE" version="1.0" application="WPG"/>
+        <libelle_reference>WPG_Canal_email</libelle_reference>
+      </document>
+      <distribution>
+        <retourPDF>N</retourPDF>
+        <distribution_MAIA>N</distribution_MAIA>
+        <distribution_cap18>N</distribution_cap18>
+        <distribution_email>N</distribution_email>
+        <email>
+          <sender>
+            <name>PHARE-WPG</name>
+            <address><![CDATA[service.restitmailsocgen.com]]></address>
+          </sender>
+          <recipients>
+            <to><![CDATA[sophie.muylaertsocgen.com]]></to>
+            <cc><![CDATA[mails.pharesocgen.com]]></cc>
+          </recipients>
+          <subject>FAE*SOGEFRPP*14/02/19*A*FR99WPSISB001/T*0000153383*0000001588</subject>
+          <message><![CDATA[<br/><i><span style=font-size:10.0pt;font-family:Arial>Conformément &agrave votre demande, nous avons le plaisir de vous adresser, en pièce jointe, votre Relevé de Factures Acceptées à Echéance.</span></i><br/><i><span style=font-size:10.0pt;font-family:Arial>Pour toute information complémentaire sur ce relevé, nous vous prions de vous adresser &agrave votre interlocuteur Société Générale habituel.</span></i><i><span style=font-size:10.0pt;font-family:Arial>Ce mail est envoyé automatiquement ; Les messages de réponse ne sont pas traités.</span></i>]]></message>
+          <attachment_name>FAE_SOGEFRPP_20190214_09313269_0000153383_00001588_04.pdf</attachment_name>
+        </email>
+      </distribution>
+      <archivage>
+        <code_archivage>N</code_archivage>
+      </archivage>
+    </enteteTechnique>
+    <multiDocument>
+      <multiDoc>O</multiDoc>
+      <id>FAE2019021409313269</id>
+      <num>004</num>
+      <total>005</total>
+      <complet>N</complet>
+    </multiDocument>
+    <donnees>
+      <EnteteMail>
+        <Date><![CDATA[14/02/2019]]></Date>
+        <NumAvis><![CDATA[0001588]]></NumAvis>
+        <LibAdresseMailFax><![CDATA[Document adressé sur le mail principal:]]></LibAdresseMailFax>
+        <AdresseMail><![CDATA[sophie.muylaertsocgen.com]]></AdresseMail>
+        <CodeLangue><![CDATA[FRA]]></CodeLangue>
+        <CodeBanque><![CDATA[30003]]></CodeBanque>
+        <LibelleBasdePage><![CDATA[Ce relevé vous est communiqué à titre indicatif. Pour toute information complémentaire, veuillez vous adresser à vos contacts habituels.    ]]></LibelleBasdePage>
+      </EnteteMail>
+      <EnteteDestinataire>
+        <Agence><![CDATA[ZZZZZ]]></Agence>
+        <RaisonSociale><![CDATA[TEST ISB]]></RaisonSociale>
+        <Reference><![CDATA[0000153383-0001588-04]]></Reference>
+      </EnteteDestinataire>
+      <BlocOperations>
+        <EnteteBloc>
+          <LibNomDo><![CDATA[Nom du Donneur d'ordre]]></LibNomDo>
+          <LibCompteDo><![CDATA[Coordonnées bancaires]]></LibCompteDo>
+          <LibBic><![CDATA[BIC]]></LibBic>
+          <LibDatExeDem><![CDATA[Date Exe. Demandée]]></LibDatExeDem>
+          <LibDatExeApp><![CDATA[Date Exe. Appliquée]]></LibDatExeApp>
+          <LibReferenceDo><![CDATA[Référence]]></LibReferenceDo>
+          <LibNb><![CDATA[Nombre]]></LibNb>
+          <LibTotal><![CDATA[Montant total de FAE]]></LibTotal>
+          <LibDevise><![CDATA[Dev]]></LibDevise>
+          <NomDo><![CDATA[GROUPE MOUSSET]]></NomDo>
+          <CompteDo><![CDATA[FR76 3000 3017 4900 0204 2046 329]]></CompteDo>
+          <Bic><![CDATA[SOGEFRPP]]></Bic>
+          <DatExeDem><![CDATA[14/02/2019]]></DatExeDem>
+          <DatExeApp><![CDATA[14/02/2019]]></DatExeApp>
+          <ReferenceDo><![CDATA[SOGEFRPP-2019-02-13T09:52:15]]></ReferenceDo>
+          <Nbre><![CDATA[2]]></Nbre>
+          <Total><![CDATA[908,00]]></Total>
+          <Devise><![CDATA[EUR]]></Devise>
+          <LibNomDest><![CDATA[Nom du fournisseur]]></LibNomDest>
+          <LibBicOpt><![CDATA[BIC]]></LibBicOpt>
+          <LibRefCli><![CDATA[Référence client]]></LibRefCli>
+          <LibMntOp><![CDATA[Montant]]></LibMntOp>
+          <LibDevOp><![CDATA[Dev]]></LibDevOp>
+          <LibRefCom><![CDATA[Référence commerciale]]></LibRefCom>
+          <LibMotPmnt><![CDATA[Motif de paiement]]></LibMotPmnt>
+          <LibDatReg><![CDATA[Date de règlement]]></LibDatReg>
+        </EnteteBloc>
+        <Operation>
+          <NomDest><![CDATA[JEAN-LUC BOUMARD]]></NomDest>
+          <BicOp><![CDATA[CMCIFR2A]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[618,00]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0000774]]></RefCom>
+          <MotPmnt><![CDATA[01/2019 /01/2019]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+        <Operation>
+          <NomDest><![CDATA[VARHOUVER NATHALIE]]></NomDest>
+          <BicOp><![CDATA[CMCIFR2A]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[290,00]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0000773]]></RefCom>
+          <MotPmnt><![CDATA[0802/19 /0802/19]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+      </BlocOperations>
+      <BlocOperations>
+        <EnteteBloc>
+          <LibNomDo><![CDATA[Nom du Donneur d'ordre]]></LibNomDo>
+          <LibCompteDo><![CDATA[Coordonnées bancaires]]></LibCompteDo>
+          <LibBic><![CDATA[BIC]]></LibBic>
+          <LibDatExeDem><![CDATA[Date Exe. Demandée]]></LibDatExeDem>
+          <LibDatExeApp><![CDATA[Date Exe. Appliquée]]></LibDatExeApp>
+          <LibReferenceDo><![CDATA[Référence]]></LibReferenceDo>
+          <LibNb><![CDATA[Nombre]]></LibNb>
+          <LibTotal><![CDATA[Montant total de FAE]]></LibTotal>
+          <LibDevise><![CDATA[Dev]]></LibDevise>
+          <NomDo><![CDATA[GROUPE MOUSSET]]></NomDo>
+          <CompteDo><![CDATA[FR76 3000 3017 4900 0204 2046 329]]></CompteDo>
+          <Bic><![CDATA[SOGEFRPP]]></Bic>
+          <DatExeDem><![CDATA[18/02/2019]]></DatExeDem>
+          <DatExeApp><![CDATA[18/02/2019]]></DatExeApp>
+          <ReferenceDo><![CDATA[SOGEFRPP-2019-02-13T09:52:15]]></ReferenceDo>
+          <Nbre><![CDATA[2]]></Nbre>
+          <Total><![CDATA[572,00]]></Total>
+          <Devise><![CDATA[EUR]]></Devise>
+          <LibNomDest><![CDATA[Nom du fournisseur]]></LibNomDest>
+          <LibBicOpt><![CDATA[BIC]]></LibBicOpt>
+          <LibRefCli><![CDATA[Référence client]]></LibRefCli>
+          <LibMntOp><![CDATA[Montant]]></LibMntOp>
+          <LibDevOp><![CDATA[Dev]]></LibDevOp>
+          <LibRefCom><![CDATA[Référence commerciale]]></LibRefCom>
+          <LibMotPmnt><![CDATA[Motif de paiement]]></LibMotPmnt>
+          <LibDatReg><![CDATA[Date de règlement]]></LibDatReg>
+        </EnteteBloc>
+        <Operation>
+          <NomDest><![CDATA[CHATEAU BOISNIARD]]></NomDest>
+          <BicOp><![CDATA[CCBPFRPPNAN]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[391,60]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0000769]]></RefCom>
+          <MotPmnt><![CDATA[2019012801 /2019012801]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+        <Operation>
+          <NomDest><![CDATA[LE GRAND TURC HOTEL RESTAURANT]]></NomDest>
+          <BicOp><![CDATA[CEPAFRPP444]]></BicOp>
+          <ValRefCli><![CDATA[]]></ValRefCli>
+          <MntOp><![CDATA[180,40]]></MntOp>
+          <DevOp><![CDATA[EUR]]></DevOp>
+          <RefCom><![CDATA[0000766]]></RefCom>
+          <MotPmnt><![CDATA[0190190001 /0190190001]]></MotPmnt>
+          <DatReg><![CDATA[]]></DatReg>
+        </Operation>
+      </BlocOperations>
+    </donnees>
+  </WPG_FAE>
+</Rapport>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rapport>
+  <WPG_FAE>
+    <enteteTechnique>
+      <demandeur>
+        <identifiant>15338301</identifiant>
+      </demandeur>
+      <document>
+        <doc nom="FAE" version="1.0" application="WPG"/>
+        <libelle_reference>WPG_Canal_email</libelle_reference>
+      </document>
+      <distribution>
+        <retourPDF>N</retourPDF>
+        <distribution_MAIA>N</distribution_MAIA>
+        <distribution_cap18>N</distribution_cap18>
+        <distribution_email>N</distribution_email>
+        <email>
+          <sender>
+            <name>PHARE-WPG</name>
+            <address><![CDATA[service.restitmailsocgen.com]]></address>
+          </sender>
+          <recipients>
+            <to><![CDATA[sophie.muylaertsocgen.com]]></to>
+            <cc><![CDATA[mails.pharesocgen.com]]></cc>
+          </recipients>
+          <subject>FAE*SOGEFRPP*14/02/19*A*FR99WPSISB001/T*0000153383*0000001588</subject>
+          <message><![CDATA[<br/><i><span style=font-size:10.0pt;font-family:Arial>Conformément &agrave votre demande, nous avons le plaisir de vous adresser, en pièce jointe, votre Relevé de Factures Acceptées à Echéance.</span></i><br/><i><span style=font-size:10.0pt;font-family:Arial>Pour toute information complémentaire sur ce relevé, nous vous prions de vous adresser &agrave votre interlocuteur Société Générale habituel.</span></i><i><span style=font-size:10.0pt;font-family:Arial>Ce mail est envoyé automatiquement ; Les messages de réponse ne sont pas traités.</span></i>]]></message>
+          <attachment_name>FAE_SOGEFRPP_20190214_09313269_0000153383_00001588_05.pdf</attachment_name>
+        </email>
+      </distribution>
+      <archivage>
+        <code_archivage>N</code_archivage>
+      </archivage>
+    </enteteTechnique>
+    <multiDocument>
+      <multiDoc>O</multiDoc>
+      <id>FAE2019021409313269</id>
+      <num>005</num>
+      <total>005</total>
+      <complet>O</complet>
+    </multiDocument>
+  </WPG_FAE>
+</Rapport>

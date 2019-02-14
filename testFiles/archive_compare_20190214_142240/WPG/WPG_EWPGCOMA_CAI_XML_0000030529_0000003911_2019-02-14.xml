@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:acmt.022.001.02">
+  <IdModAdvc>
+    <Assgnmt>
+      <MsgId>CAI-SDD-2019-02-14-A-00000001</MsgId>
+      <CreDtTm>2019-02-14T00:00:00</CreDtTm>
+      <Assgnr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>SOGEFRPPXXX</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Assgnr>
+      <Assgne>
+        <Pty>
+          <Id>
+            <OrgId>
+              <Othr>
+                <Id>FR7630003000500002002186578</Id>
+              </Othr>
+            </OrgId>
+          </Id>
+        </Pty>
+      </Assgne>
+    </Assgnmt>
+    <OrgnlTxRef>
+      <MsgNmId>pain.008</MsgNmId>
+    </OrgnlTxRef>
+    <Mod>
+      <Id>ADHESION 1973311    16816</Id>
+      <OrgnlPtyAndAcctId>
+        <Acct>
+          <IBAN>FR7610268025521640620030049</IBAN>
+        </Acct>
+        <Agt>
+          <FinInstnId>
+            <BICFI>COURFR2TXXX</BICFI>
+          </FinInstnId>
+        </Agt>
+      </OrgnlPtyAndAcctId>
+      <UpdtdPtyAndAcctId>
+        <Pty>
+          <Nm>CHARLOTTE DUGUE</Nm>
+        </Pty>
+        <Acct>
+          <IBAN>FR7610268025521697060030039</IBAN>
+        </Acct>
+        <Agt>
+          <FinInstnId>
+            <BICFI>COURFR2TXXX</BICFI>
+          </FinInstnId>
+        </Agt>
+      </UpdtdPtyAndAcctId>
+      <AddtlInf>/ICS/FR41CWI464290/UMR/00MOBS1455553602++1973311</AddtlInf>
+    </Mod>
+  </IdModAdvc>
+</Document>
