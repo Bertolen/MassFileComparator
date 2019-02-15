@@ -1,5 +1,4 @@
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,7 +23,7 @@ public class CommandsPanel extends JPanel
 		this.add(button);
 		
 		this.setBorder(BorderFactory.createLineBorder(Color.black));
-		this.setPreferredSize(new Dimension(1600, 50));
+//		this.setPreferredSize(new Dimension(1600, 50));
 		
 	}
 	

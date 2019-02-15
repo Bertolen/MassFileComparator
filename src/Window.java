@@ -47,17 +47,19 @@ public class Window extends JFrame{
 	    foldersPanel.setLayout(new BoxLayout(foldersPanel, BoxLayout.PAGE_AXIS));
 	    foldersPanel.add(folderPanel1);
 	    foldersPanel.add(folderPanel2);
-//	    foldersPanel.setSize(600, 700);
-//	    foldersPanel.setPreferredSize(new Dimension(600, 700));
+	    foldersPanel.setMaximumSize(new Dimension(600, 700));
+	    foldersPanel.setMinimumSize(new Dimension(600, 700));
 
 	    // on fait le panneau central
 	    JPanel centralPanel = new JPanel();
 	    centralPanel.setLayout(new BoxLayout(centralPanel, BoxLayout.LINE_AXIS));
 	    centralPanel.add(foldersPanel);
 	    centralPanel.add(resultsPanel);
+//	    centralPanel.setMaximumSize(new Dimension(1600, 700));
 	    
 	    // Le bouton de comparaison commence désactivé
 		cmdPanel.button.setEnabled(false);
+		cmdPanel.setMaximumSize(new Dimension(1600, 100));
 	    
 	    // on ajoute nos panneaux à notre fenêtre
 	    this.getContentPane().setLayout(new BoxLayout(this.getContentPane(), BoxLayout.PAGE_AXIS));
@@ -84,8 +86,11 @@ public class Window extends JFrame{
 	}
 	
 	public void CompareFiles() {
-		System.out.println("compare files");
 		
+		//first, we clean up
+		resultsPanel.clearFileDifferences();
+		
+		// open the files to be compared
 		String path1 = folderPanel1.getFolderPath();
 		String path2 = folderPanel2.getFolderPath();
 		Vector<String> files1 = (Vector<String>) resultsPanel.commonFiles1.clone();
@@ -99,8 +104,6 @@ public class Window extends JFrame{
 	void CompareXmlFile(String file1, String path1, String file2, String path2) {
 		try {
 			// reading two xml file to compare in Java program 
-			System.out.println("fichier 1 : " + path1 + "/" + file1);
-			System.out.println("fichier 2 : " + path2 + "/" + file2);
 			FileInputStream fis1 = new FileInputStream(path1 + "/" + file1); 
 			FileInputStream fis2 = new FileInputStream(path2 + "/" + file2);
 			
@@ -119,6 +122,7 @@ public class Window extends JFrame{
 			
 		} catch (SAXException | IOException e) {
 			e.printStackTrace();
+			resultsPanel.addDifference(file1, file2);
 		}
 	}
 	

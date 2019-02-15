@@ -1,4 +1,3 @@
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -22,8 +21,8 @@ implements ActionListener {
 	 */
 	private static final long serialVersionUID = 1L;
 	// header components
-	JButton button = new JButton("Choose folder");
-	JLabel folderPath = new JLabel("No folder selected");
+	JButton button = new JButton("Ouvrir un dossier");
+	JLabel folderPath = new JLabel("Pas de dossier choisi");
 	JFileChooser chooser = new JFileChooser();
 	
 	// list components
@@ -44,7 +43,7 @@ implements ActionListener {
 		
 		// on initialise le menu de selection du dossier
 		chooser.setCurrentDirectory(new java.io.File("."));
-		chooser.setDialogTitle("Please select a file to compare");
+		chooser.setDialogTitle("Veuillez selectionner un dossier");
 		chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 		chooser.setAcceptAllFileFilterUsed(false);
 		
@@ -54,7 +53,7 @@ implements ActionListener {
 		list.setLayoutOrientation(JList.VERTICAL);
 		list.setVisibleRowCount(-1);
 		listPane = new JScrollPane(list);
-		listPane.setPreferredSize(new Dimension(600, 350));
+//		listPane.setPreferredSize(new Dimension(600, 350));
 		
 		// On remplis notre panneau
 		this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
