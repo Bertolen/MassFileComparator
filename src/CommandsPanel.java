@@ -30,7 +30,7 @@ public class CommandsPanel extends JPanel
 	// On écoute les actions du panneau (ici il n'y a que le bouton donc on a pas besoin de vérifier l'origine)
 	public void actionPerformed(ActionEvent e) {	
 		Window window = (Window) SwingUtilities.windowForComponent(this);
-		window.CompareFiles();
+		window.compareFiles();
 	}
 
 }

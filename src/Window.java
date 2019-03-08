@@ -1,11 +1,13 @@
 import java.awt.Dimension;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
@@ -55,7 +57,6 @@ public class Window extends JFrame{
 	    centralPanel.setLayout(new BoxLayout(centralPanel, BoxLayout.LINE_AXIS));
 	    centralPanel.add(foldersPanel);
 	    centralPanel.add(resultsPanel);
-//	    centralPanel.setMaximumSize(new Dimension(1600, 700));
 	    
 	    // Le bouton de comparaison commence désactivé
 		cmdPanel.button.setEnabled(false);
@@ -70,7 +71,7 @@ public class Window extends JFrame{
 	    this.setVisible(true);
 	}
 	
-	public void OnChildReady(JPanel child, boolean isChildReady) {
+	public void onChildReady(JPanel child, boolean isChildReady) {
 		
 		if(child == folderPanel1)
 			ready1 = isChildReady;
@@ -81,11 +82,11 @@ public class Window extends JFrame{
 		cmdPanel.button.setEnabled(ready1 && ready2);	
 		
 		if(ready1 && ready2) {
-			resultsPanel.CheckFileLists(folderPanel1.getFileList(), folderPanel2.getFileList());
+			resultsPanel.checkFileLists(folderPanel1.getFileList(), folderPanel2.getFileList());
 		}
 	}
 	
-	public void CompareFiles() {
+	public void compareFiles() {
 		
 		//first, we clean up
 		resultsPanel.clearFileDifferences();
@@ -93,23 +94,24 @@ public class Window extends JFrame{
 		// open the files to be compared
 		String path1 = folderPanel1.getFolderPath();
 		String path2 = folderPanel2.getFolderPath();
-		Vector<String> files1 = (Vector<String>) resultsPanel.commonFiles1.clone();
-		Vector<String> files2 = (Vector<String>) resultsPanel.commonFiles2.clone();
+		ArrayList<String> files1 = new ArrayList<> (resultsPanel.commonFiles1);
+		ArrayList<String> files2 = new ArrayList<> (resultsPanel.commonFiles2);
 		
 		for (int i = 0; i < files1.size(); i++) {
-			CompareXmlFile(files1.get(i), path1, files2.get(i), path2);
+			compareXmlFile(files1.get(i), path1, files2.get(i), path2);
 		} 
 	}
 	
-	void CompareXmlFile(String file1, String path1, String file2, String path2) {
-		try {
-			// reading two xml file to compare in Java program 
-			FileInputStream fis1 = new FileInputStream(path1 + "/" + file1); 
-			FileInputStream fis2 = new FileInputStream(path2 + "/" + file2);
-			
-			// using BufferedReader for improved performance 
-			BufferedReader source = new BufferedReader(new InputStreamReader(fis1)); 
-			BufferedReader target = new BufferedReader(new InputStreamReader(fis2));
+	void compareXmlFile(String file1, String path1, String file2, String path2) {
+		try (
+				// reading two xml file to compare in Java program 
+				FileInputStream fis1 = new FileInputStream(path1 + "/" + file1); 
+				FileInputStream fis2 = new FileInputStream(path2 + "/" + file2);
+				
+				// using BufferedReader for improved performance 
+				BufferedReader source = new BufferedReader(new InputStreamReader(fis1)); 
+				BufferedReader target = new BufferedReader(new InputStreamReader(fis2));
+			) {
 			
 			// configuring WMLUnit to ignore white spaces
 			XMLUnit.setIgnoreWhitespace(true);
@@ -126,7 +128,7 @@ public class Window extends JFrame{
 		}
 	}
 	
-	public static List<Difference> compareXML(Reader source, Reader target) throws SAXException, IOException{ 
+	public List<Difference> compareXML(Reader source, Reader target) throws SAXException, IOException{ 
 		
 		//creating Diff instance to compare two XML files 
 		Diff xmlDiff = new Diff(source, target); 
@@ -134,6 +136,78 @@ public class Window extends JFrame{
 		//for getting detailed differences between two xml files 
 		DetailedDiff detailXmlDiff = new DetailedDiff(xmlDiff); 
 		
-		return detailXmlDiff.getAllDifferences(); 
+		//obtain the raw list of differences
+		List<Difference> differences =  detailXmlDiff.getAllDifferences();
+		
+		List<String> ignoredPaths = readIgnoredPaths();
+		
+		//remove ignored differences
+		ignoreFalseDifferences(differences, ignoredPaths);
+		
+		return differences;
+	}
+	
+	private void ignoreFalseDifferences(List<Difference> differences, List<String> ignoredPaths) {		
+		List<Difference> toRemove = new ArrayList<>();
+		
+		//for every difference found
+		for(Difference difference : differences) {
+			
+			//get the difference path
+			String balise;
+			if(difference.getControlNodeDetail().getXpathLocation() != null){
+				balise = difference.getControlNodeDetail().getXpathLocation();
+			} else {
+				balise = difference.getTestNodeDetail().getXpathLocation();
+			}
+			
+			//if the difference path belongs to the ignored paths
+			if(ignoredPaths.contains(balise)) {
+				//we mark to difference for removal
+				toRemove.add(difference);
+			}
+		}
+		
+		// remove all the marked differences
+		for (Difference removedDif : toRemove) {
+			differences.remove(removedDif);
+		}
+	}
+	
+	public List<String> readIgnoredPaths() {
+		List<String> ignoredPaths = new ArrayList<>();
+		String fileName = "IgnoredPaths.txt";
+		File file = new File(fileName);
+		
+		try (
+				// reading two xml file to compare in Java program 
+				FileInputStream fis = new FileInputStream(file);
+				
+				// using BufferedReader for improved performance 
+				BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+			) {
+			
+			// add each line of the file as a new string to the list
+			String newLine = reader.readLine();
+			while (newLine != null) {
+				ignoredPaths.add(newLine);
+				newLine = reader.readLine();
+			}
+			
+		} catch (FileNotFoundException e) {
+			
+			// if the file hasn't been found we create it
+			try {
+				file.createNewFile();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		// return the list
+		return ignoredPaths;
 	}
 }

@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Dimension;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
@@ -27,8 +28,8 @@ public class ResultsPanel extends JPanel {
 	JTextArea prompt = new JTextArea();
 	JScrollPane filesTableScroll;
 	JPanel filesTablePane;
-	Vector<String> commonFiles1 = new Vector<>();
-	Vector<String> commonFiles2 = new Vector<>();
+	ArrayList<String> commonFiles1 = new ArrayList<>();
+	ArrayList<String> commonFiles2 = new ArrayList<>();
 	
 	
 	private int identicalFiles = 0;
@@ -66,17 +67,20 @@ public class ResultsPanel extends JPanel {
 		this.setBorder(BorderFactory.createLineBorder(Color.black));
 	}
 
-	public void CheckFileLists(String[] list1, String[] list2) {
+	public void checkFileLists(String[] list1, String[] list2) {
+		
+		// extract the root names from the file names
+		ArrayList<String> rootNames1 = computeRootNames(list1);
+		ArrayList<String> rootNames2 = computeRootNames(list2);
 		
 		//checks how many matches we have
 		commonFiles1.clear();
-		commonFiles2.clear();
+		commonFiles2.clear();		
 		for(int i = 0 ; i < list1.length; i++) {
 			
 			for(int j = 0 ; j < list2.length; j++) {
 				
-//				if(list1[i].substring(1).equals(list2[j].substring(1))) {
-					if(RootName(list1[i]).equals(RootName(list2[j]))) {
+				if(rootNames1.get(i).equals(rootNames2.get(j))) {
 					commonFiles1.add(list1[i]);
 					commonFiles2.add(list2[j]);
 				}
@@ -95,44 +99,64 @@ public class ResultsPanel extends JPanel {
 		folderTableData.setValueAt(errorFiles, 5, 1);
 	}
 	
-	private String RootName(String name) {
-		String rootName = new String();
-		String[] nameComponents = name.split("_");
-		boolean firstNumber = true;
-		boolean concat = false;
+	private ArrayList<String> computeRootNames(String[] namesList) {
+		ArrayList<String> rootNames = new ArrayList<String>();
 		
-		for (String component : nameComponents) {
+		int broadcastSerial = 0; // the broadcast serial number
+		int contractSerial = 0; //the contract id
+		
+		for (String name : namesList) {
+			String rootName = new String();
+			String[] nameComponents = name.split("_"); // split the name in it's different components
+			boolean firstNumber = true;
+			boolean concat = false;
 			
-			// by default we add everything to our output
-			concat = true;
-			
-			// when we get a number 
-			/*if(StringUtils.isNumeric(component)) {
+			for (String component : nameComponents) {
 				
-				// if it is the first number we append it to our string
-				if(firstNumber){
-					firstNumber = false;					
-				} else { // if not we don't append it to our string
+				// by default we consider everything to be part of the root name
+				concat = true; 
+				
+				//when we get a number
+				if(StringUtils.isNumeric(component)){
+					
+					//if it is the first number of the name
+					if(firstNumber){
+						
+						// then it is the contract number so we check if we're on a new contract or not
+						if(contractSerial == Integer.parseInt(component)) {
+							// if we are still on the same contract then we increase the broadcast number
+							broadcastSerial++;
+						} else {
+							// if not we reset the broadcast number 
+							broadcastSerial = 0;
+							// and record the new contract number
+							contractSerial = Integer.parseInt(component);
+						}
+						
+						// the next number will not be the first one
+						firstNumber = false;
+					} else {
+						// if this isn't the first number then it is the broadcast serial number
+						component = Integer.toString(broadcastSerial);
+					}
+				}
+				
+				// if the component is XPG or WPG we won't add it to the root name
+				if(component.equals("XPG") || component.equals("WPG")) {
 					concat = false;
 				}
-			}*/
-			
-			// if the component to XPG or WPG we won't add it
-			if(component.equals("XPG") || component.equals("WPG")) {
-				concat = false;
+				
+				// if the component is still set to be added, it's here that we do it
+				if(concat) {
+					rootName = rootName.concat(component);
+					rootName = rootName.concat("_");
+				}
 			}
 			
-			// if the component is still set to be added, it's here that we do it
-			if(concat) {
-				rootName = rootName.concat(component);
-				rootName = rootName.concat("_");
-			}
+			rootNames.add(rootName);
 		}
 		
-		System.out.println("raw name = " + name);
-		System.out.println("root name = " + rootName);
-		
-		return rootName;
+		return rootNames;
 	}
 	
 	public void printDifferences(List<Difference> differences, String fileName){ 
@@ -153,10 +177,10 @@ public class ResultsPanel extends JPanel {
 				Vector<String> row = new Vector<String>();
 				
 				String balise;
-				if(difference.getControlNodeDetail().getXpathLocation() == null){
-					balise = difference.getTestNodeDetail().getXpathLocation();
-				} else {
+				if(difference.getControlNodeDetail().getXpathLocation() != null){
 					balise = difference.getControlNodeDetail().getXpathLocation();
+				} else {
+					balise = difference.getTestNodeDetail().getXpathLocation();
 				}
 				
 				row.add(balise);

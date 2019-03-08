@@ -62,7 +62,7 @@ implements ActionListener {
 	}
 	
 	// Mise à jour de la liste de fichiers à partir du chemin de dossier obtenu
-	public void UpdateList() {
+	public void updateList() {
 		listData.clear();
 		isReady = false;
 		
@@ -74,14 +74,14 @@ implements ActionListener {
 			}
 		}
 		
-		this.OnChildReady(this, isReady);
+		this.onChildReady(this, isReady);
 	}
 	
 	// On écoute les actions du panneau (ici il n'y a que le bouton donc on a pas besoin de vérifier l'origine)
 	public void actionPerformed(ActionEvent e) {
 		if(chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
 			folderPath.setText(chooser.getSelectedFile().toString());
-			this.UpdateList();
+			this.updateList();
 		}
 	}
 
@@ -96,9 +96,9 @@ implements ActionListener {
 		return folderPath.getText();
 	}
 	
-	public void OnChildReady(JPanel child, boolean isChildReady) {		
+	public void onChildReady(JPanel child, boolean isChildReady) {		
 		Window window = (Window) SwingUtilities.windowForComponent(this);
-		window.OnChildReady(this, isChildReady);
+		window.onChildReady(this, isChildReady);
 	}
 
 }
